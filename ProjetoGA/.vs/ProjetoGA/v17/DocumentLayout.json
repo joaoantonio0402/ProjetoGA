@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\ProjetoGA\\ProjetoGA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\ProjetoGA\\ProjetoGA\\ProjetoGA\\ProjetoGA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\ProjetoGA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjetoGA.cpp",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\ProjetoGA\\ProjetoGA\\ProjetoGA\\ProjetoGA.cpp",
+              "RelativeDocumentMoniker": "ProjetoGA\\ProjetoGA.cpp",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\ProjetoGA\\ProjetoGA\\ProjetoGA\\ProjetoGA.cpp",
+              "RelativeToolTip": "ProjetoGA\\ProjetoGA.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-19T00:26:47.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
