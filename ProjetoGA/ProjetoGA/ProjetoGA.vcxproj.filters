@@ -18,10 +18,13 @@
     <ClCompile Include="ProjetoGA.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Teste.cpp">
+    <ClCompile Include="exibirCreditos.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="Teste2.cpp">
+    <ClCompile Include="telaAbertura.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="leituraArquivo.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,5 +35,18 @@
     <ClInclude Include="Teste2.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
+    <ClInclude Include="exibirCreditos.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="telaAbertura.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="leituraArquivo.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="exibirCreditos.txt" />
+    <Text Include="telaAbertura.txt" />
   </ItemGroup>
 </Project>
