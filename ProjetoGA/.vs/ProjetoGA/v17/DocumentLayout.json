@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\ProjetoGA\\ProjetoGA\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\ProjetoGA\\ProjetoGA\\ProjetoGA\\Teste.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\Teste.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\ProjetoGA\\ProjetoGA\\ProjetoGA\\ProjetoGA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\ProjetoGA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Teste.h",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\ProjetoGA\\ProjetoGA\\ProjetoGA\\Teste.h",
+              "RelativeDocumentMoniker": "ProjetoGA\\Teste.h",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\ProjetoGA\\ProjetoGA\\ProjetoGA\\Teste.h",
+              "RelativeToolTip": "ProjetoGA\\Teste.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-19T00:58:50.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ProjetoGA.cpp",
               "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\ProjetoGA\\ProjetoGA\\ProjetoGA\\ProjetoGA.cpp",
               "RelativeDocumentMoniker": "ProjetoGA\\ProjetoGA.cpp",
               "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\ProjetoGA\\ProjetoGA\\ProjetoGA\\ProjetoGA.cpp",
               "RelativeToolTip": "ProjetoGA\\ProjetoGA.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-19T00:26:47.338Z",
               "EditorCaption": ""
