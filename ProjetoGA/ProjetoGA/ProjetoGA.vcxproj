@@ -127,19 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="exibirCreditos.cpp" />
-    <ClCompile Include="leituraArquivo.cpp" />
     <ClCompile Include="ProjetoGA.cpp" />
-    <ClCompile Include="telaAbertura.cpp" />
+    <ClCompile Include="Teste.cpp" />
+    <ClCompile Include="Teste2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="exibirCreditos.txt" />
-    <Text Include="telaAbertura.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="exibirCreditos.h" />
-    <ClInclude Include="leituraArquivo.h" />
-    <ClInclude Include="telaAbertura.h" />
+    <ClInclude Include="Teste.h" />
+    <ClInclude Include="Teste2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

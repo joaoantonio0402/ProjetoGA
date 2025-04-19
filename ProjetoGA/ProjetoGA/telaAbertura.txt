@@ -1,6 +1,0 @@
-Bem-vindo Jogador! Selecione uma das opcoes abaixo:
-
-1. Novo jogo			2.Carregar jogo
-3. Exibir Creditos		4. Encerrar
-
-Digite o numero da opcao desejada: 

@@ -2,19 +2,10 @@
 //
 
 #include <iostream>
-#include <fstream>
-
-#include "exibirCreditos.h"
-#include "telaAbertura.h"
-
-using namespace std;
 
 int main()
-{   
-
-    telaAbertura app = telaAbertura();
-    app.chamarTela();
-    return 0;
+{
+    std::cout << "Hello World!\n";
 }
 
 // Executar programa: Ctrl + F5 ou Menu Depurar > Iniciar Sem Depuração
