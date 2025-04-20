@@ -1,15 +1,17 @@
 #include <iostream>
 #include <fstream>
 
-#include "exibirCreditos.h"
+#include "ExibirCreditos.h"
 
 using namespace std;
 
-exibirCreditos::exibirCreditos() {
-    arq = leituraArquivo();
-}
+ExibirCreditos::ExibirCreditos() {}
 
-void exibirCreditos::imprimeCreditos() {
-    arq.set_nomeArquivo("exibirCreditos.txt");
-    arq.ler();
+void ExibirCreditos::imprimeCreditos() {
+    set_nomeArquivo("ExibirCreditos.txt");
+    ler();
+    cout << "\nPressione qualquer tecla para retornar:";
+    cin.ignore();
+    cin.get();
+
 }

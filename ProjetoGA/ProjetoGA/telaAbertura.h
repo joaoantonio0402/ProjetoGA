@@ -1,13 +1,13 @@
 #pragma once
 
-#include "leituraArquivo.h"
 
-class telaAbertura {
+#include "Tela.h"
+#include "ExibirCreditos.h"
+
+class TelaAbertura : public Tela {
 public:
-	telaAbertura();
+	TelaAbertura();
 	void chamarTela();
-
 private:
-	leituraArquivo arq;
+	ExibirCreditos telaCreditos;
 };
-
