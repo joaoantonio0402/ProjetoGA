@@ -4,10 +4,10 @@
 
 using namespace std;
 
-class leituraArquivo
+class Tela
 {
 public:
-	leituraArquivo();
+	Tela();
 	void set_nomeArquivo(string);
 	void ler();
 

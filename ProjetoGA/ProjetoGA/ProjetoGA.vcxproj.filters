@@ -18,13 +18,13 @@
     <ClCompile Include="ProjetoGA.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="exibirCreditos.cpp">
+    <ClCompile Include="ExibirCreditos.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="telaAbertura.cpp">
+    <ClCompile Include="TelaAbertura.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="leituraArquivo.cpp">
+    <ClCompile Include="Tela.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,18 +35,18 @@
     <ClInclude Include="Teste2.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="exibirCreditos.h">
+    <ClInclude Include="ExibirCreditos.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="telaAbertura.h">
+    <ClInclude Include="TelaAbertura.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="leituraArquivo.h">
+    <ClInclude Include="Tela.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="exibirCreditos.txt" />
-    <Text Include="telaAbertura.txt" />
+    <Text Include="ExibirCreditos.txt" />
+    <Text Include="TelaAbertura.txt" />
   </ItemGroup>
 </Project>

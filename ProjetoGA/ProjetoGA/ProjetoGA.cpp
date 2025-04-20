@@ -4,14 +4,14 @@
 #include <iostream>
 #include <fstream>
 
-#include "exibirCreditos.h"
-#include "telaAbertura.h"
+#include "ExibirCreditos.h"
+#include "TelaAbertura.h"
 
 using namespace std;
 
 int main()
 {
-    telaAbertura app;
+    TelaAbertura app;
     app.chamarTela();
     return 0;
 }

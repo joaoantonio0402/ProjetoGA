@@ -1,13 +1,10 @@
 #pragma once
 
-#include "leituraArquivo.h"
+#include "Tela.h"
 
-class exibirCreditos {
+class ExibirCreditos: public Tela {
 public:
-	exibirCreditos();
+	ExibirCreditos();
 	void imprimeCreditos();
-
-private:
-	leituraArquivo arq;
 };
 

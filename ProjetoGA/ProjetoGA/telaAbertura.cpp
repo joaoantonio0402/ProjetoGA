@@ -2,20 +2,20 @@
 #include <iostream>
 
 
-#include "exibirCreditos.h"
-#include "telaAbertura.h"
+#include "ExibirCreditos.h"
+#include "TelaAbertura.h"
 
 using namespace std;
 
-telaAbertura::telaAbertura() {
-    this->arq = leituraArquivo();
+TelaAbertura::TelaAbertura() {
+    this->telaCreditos = ExibirCreditos();
 }
 
-void telaAbertura::chamarTela() {
+void TelaAbertura::chamarTela() {
     int acao = 0;
     while(true){
-        arq.set_nomeArquivo("telaAbertura.txt");
-        arq.ler();
+        set_nomeArquivo("TelaAbertura.txt");
+        ler();
 
         cin >> acao;
 
@@ -25,8 +25,8 @@ void telaAbertura::chamarTela() {
         case 2:
             return;
         case 3:
-            arq.set_nomeArquivo("exibirCreditos.txt");
-            arq.ler();
+            telaCreditos.imprimeCreditos();
+            
             break;
         case 4:
             return;
