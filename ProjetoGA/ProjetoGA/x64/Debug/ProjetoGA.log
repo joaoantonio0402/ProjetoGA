@@ -1,6 +1,2 @@
-﻿  ProjetoGA.cpp
-  TelaAtributos.cpp
-  TelaEscolhaPersonagem.cpp
-  TelaInventario.cpp
-  Gerando Código...
-  ProjetoGA.vcxproj -> C:\Users\Gabriel\source\repos\ProjetoGA\ProjetoGA\x64\Debug\ProjetoGA.exe
+﻿  TelaDeJogo.cpp
+  ProjetoGA.vcxproj -> C:\ProjetoGA\ProjetoGA\ProjetoGA\x64\Debug\ProjetoGA.exe

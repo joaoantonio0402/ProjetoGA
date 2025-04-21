@@ -31,3 +31,9 @@ void Tela::pressioneParaRetornar() {
     cout << "\nPressione qualquer tecla para retornar:";
     cin.ignore().get();
 }
+int Tela::aguardaResposta() {
+    int opcao = 0;
+    cout << "\nEscolha a opção desejada";
+    cin >> opcao;
+    return opcao;
+}

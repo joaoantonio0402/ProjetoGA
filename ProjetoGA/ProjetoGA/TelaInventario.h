@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Tela.h"
+#include "Item.h"
 class TelaInventario: public Tela
 {
 public:

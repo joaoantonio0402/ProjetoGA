@@ -3,11 +3,13 @@
 
 #include <iostream>
 #include <fstream>
-
+#include <vector>
 #include "TelaAbertura.h"
 #include "TelaAtributos.h"
 #include "TelaEscolhaPersonagem.h"
 #include "TelaInventario.h"
+#include "TelaDeJogo.h"
+#include "Item.h"
 
 using namespace std;
 
@@ -24,13 +26,18 @@ int main()
 
         TelaEscolhaPersonagem telaEscolhaPersonagem;
         tipoPersonagem = telaEscolhaPersonagem.init();
+        vector<Item*> inventario;
 
         TelaInventario telaInventario(tipoPersonagem, telaAtributos.get_habilidade(), telaAtributos.get_energia(), telaAtributos.get_sorte());
+        int cena = 1;
+        TelaDeJogo jogo(&cena, inventario);
+        while (cena != 0) {
+            jogo.jogar();
+        }
     }
 
     return 0;
 }
-
 
 // Executar programa: Ctrl + F5 ou Menu Depurar > Iniciar Sem Depuração
 // Depurar programa: F5 ou menu Depurar > Iniciar Depuração

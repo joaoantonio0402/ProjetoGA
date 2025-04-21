@@ -128,24 +128,32 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ExibirCreditos.cpp" />
+    <ClCompile Include="Item.cpp" />
     <ClCompile Include="Tela.cpp" />
     <ClCompile Include="ProjetoGA.cpp" />
     <ClCompile Include="TelaAbertura.cpp" />
     <ClCompile Include="TelaAtributos.cpp" />
+    <ClCompile Include="TelaDeJogo.cpp" />
     <ClCompile Include="TelaEscolhaPersonagem.cpp" />
     <ClCompile Include="TelaInventario.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ExibirCreditos.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Tela.h" />
     <ClInclude Include="TelaAbertura.h" />
     <ClInclude Include="TelaAtributos.h" />
+    <ClInclude Include="TelaDeJogo.h" />
     <ClInclude Include="TelaEscolhaPersonagem.h" />
     <ClInclude Include="TelaInventario.h" />
     <ClInclude Include="Teste.h" />
     <ClInclude Include="Teste2.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="1.txt" />
+    <Text Include="2.txt" />
+    <Text Include="3.txt" />
     <Text Include="TelaEscolhaPersonagem.txt" />
     <Text Include="ExibirCreditos.txt" />
     <Text Include="I_AnelDeDoran.txt" />
@@ -156,6 +164,9 @@
     <Text Include="M_Troll.txt" />
     <Text Include="TelaAbertura.txt" />
     <Text Include="DefinirAtributos.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ProjetoGA.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
