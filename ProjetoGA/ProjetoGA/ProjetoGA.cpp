@@ -6,6 +6,8 @@
 
 #include "TelaAbertura.h"
 #include "TelaAtributos.h"
+#include "TelaEscolhaPersonagem.h"
+#include "TelaInventario.h"
 
 using namespace std;
 
@@ -16,8 +18,14 @@ int main()
     acao = app.init();
 
     if (acao == 1) {
+        string tipoPersonagem;
         TelaAtributos telaAtributos;
         telaAtributos.init();
+
+        TelaEscolhaPersonagem telaEscolhaPersonagem;
+        tipoPersonagem = telaEscolhaPersonagem.init();
+
+        TelaInventario telaInventario(tipoPersonagem, telaAtributos.get_habilidade(), telaAtributos.get_energia(), telaAtributos.get_sorte());
     }
 
     return 0;

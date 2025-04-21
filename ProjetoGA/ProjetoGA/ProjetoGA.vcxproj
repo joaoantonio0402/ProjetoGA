@@ -132,16 +132,21 @@
     <ClCompile Include="ProjetoGA.cpp" />
     <ClCompile Include="TelaAbertura.cpp" />
     <ClCompile Include="TelaAtributos.cpp" />
+    <ClCompile Include="TelaEscolhaPersonagem.cpp" />
+    <ClCompile Include="TelaInventario.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ExibirCreditos.h" />
     <ClInclude Include="Tela.h" />
     <ClInclude Include="TelaAbertura.h" />
     <ClInclude Include="TelaAtributos.h" />
+    <ClInclude Include="TelaEscolhaPersonagem.h" />
+    <ClInclude Include="TelaInventario.h" />
     <ClInclude Include="Teste.h" />
     <ClInclude Include="Teste2.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="TelaEscolhaPersonagem.txt" />
     <Text Include="ExibirCreditos.txt" />
     <Text Include="I_AnelDeDoran.txt" />
     <Text Include="I_EspadaGPC.txt" />

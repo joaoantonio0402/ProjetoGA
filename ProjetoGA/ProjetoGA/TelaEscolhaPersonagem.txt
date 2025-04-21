@@ -1,0 +1,3 @@
+Para iniciar a aventura, escolha seu tipo de personagem
+Guerreiro(1)	Mago(2)
+Digite o numero do tipo do personagem:

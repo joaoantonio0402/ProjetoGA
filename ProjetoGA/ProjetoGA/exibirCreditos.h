@@ -2,11 +2,9 @@
 
 #include "Tela.h"
 
-class ExibirCreditos {
+class ExibirCreditos: public Tela {
 public:
 	ExibirCreditos();
 	void imprimeCreditos();
-private:
-	Tela tela;
 };
 

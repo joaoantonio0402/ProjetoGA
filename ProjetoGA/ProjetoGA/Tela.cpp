@@ -15,12 +15,14 @@ void Tela::set_nomeArquivo(string s_nomeArquivo) {
 }
 
 void Tela::ler() {
-    string line;
+    char proximo;
     ifstream entrada;
     entrada.open(nomeArquivo);
 
-    while (getline(entrada, line)) {
-        cout << line << endl;
+    entrada.get(proximo);
+    while (!entrada.eof()) {
+        cout << proximo;
+        entrada.get(proximo);
     }
     entrada.close();
 }
