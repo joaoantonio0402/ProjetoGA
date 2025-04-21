@@ -1,0 +1,11 @@
+Você está andando tranquilamente pela floresta quando começa a escutar um barulho.
+Você ainda está cansado do último combate quando de repente um lobo surge bem na sua frente
+
+M: S
+N: Lobo
+H: 8
+S: 9
+E: 7
+P: 1
+
+XX;XY

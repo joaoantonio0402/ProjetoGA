@@ -5,13 +5,13 @@
 
 using namespace std;
 
-ExibirCreditos::ExibirCreditos() {}
+ExibirCreditos::ExibirCreditos() {
+    tela = Tela();
+}
 
 void ExibirCreditos::imprimeCreditos() {
-    set_nomeArquivo("ExibirCreditos.txt");
-    ler();
-    cout << "\nPressione qualquer tecla para retornar:";
-    cin.ignore();
-    cin.get();
+    tela.set_nomeArquivo("ExibirCreditos.txt");
+    tela.ler();
+    tela.pressioneParaRetornar();
 
 }

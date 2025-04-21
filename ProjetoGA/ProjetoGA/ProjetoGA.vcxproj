@@ -131,17 +131,26 @@
     <ClCompile Include="Tela.cpp" />
     <ClCompile Include="ProjetoGA.cpp" />
     <ClCompile Include="TelaAbertura.cpp" />
+    <ClCompile Include="TelaAtributos.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ExibirCreditos.h" />
     <ClInclude Include="Tela.h" />
     <ClInclude Include="TelaAbertura.h" />
+    <ClInclude Include="TelaAtributos.h" />
     <ClInclude Include="Teste.h" />
     <ClInclude Include="Teste2.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="ExibirCreditos.txt" />
+    <Text Include="I_AnelDeDoran.txt" />
+    <Text Include="I_EspadaGPC.txt" />
+    <Text Include="I_EspigaDeMilho.txt" />
+    <Text Include="I_MalhaDePano.txt" />
+    <Text Include="M_Lobo.txt" />
+    <Text Include="M_Troll.txt" />
     <Text Include="TelaAbertura.txt" />
+    <Text Include="DefinirAtributos.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

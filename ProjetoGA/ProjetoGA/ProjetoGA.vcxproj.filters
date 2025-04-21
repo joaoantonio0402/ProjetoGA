@@ -27,6 +27,9 @@
     <ClCompile Include="Tela.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
+    <ClCompile Include="TelaAtributos.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Teste.h">
@@ -44,9 +47,19 @@
     <ClInclude Include="Tela.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
+    <ClInclude Include="TelaAtributos.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ExibirCreditos.txt" />
     <Text Include="TelaAbertura.txt" />
+    <Text Include="M_Lobo.txt" />
+    <Text Include="I_EspadaGPC.txt" />
+    <Text Include="I_MalhaDePano.txt" />
+    <Text Include="I_AnelDeDoran.txt" />
+    <Text Include="I_EspigaDeMilho.txt" />
+    <Text Include="M_Troll.txt" />
+    <Text Include="DefinirAtributos.txt" />
   </ItemGroup>
 </Project>

@@ -11,7 +11,7 @@ TelaAbertura::TelaAbertura() {
     this->telaCreditos = ExibirCreditos();
 }
 
-void TelaAbertura::chamarTela() {
+int TelaAbertura::init() {
     int acao = 0;
     while(true){
         set_nomeArquivo("TelaAbertura.txt");
@@ -21,18 +21,17 @@ void TelaAbertura::chamarTela() {
 
         switch (acao){
         case 1:
-            return;
+            return 1;
         case 2:
-            return;
+            return 2;
         case 3:
             telaCreditos.imprimeCreditos();
-            
             break;
         case 4:
-            return;
+            return 4;
         default:
             cout << "Opcao invalida" << endl;
-            break;
+            pressioneParaRetornar();
         }
     }
 }

@@ -10,6 +10,7 @@ public:
 	Tela();
 	void set_nomeArquivo(string);
 	void ler();
+	void pressioneParaRetornar();
 
 private:
 	string nomeArquivo;

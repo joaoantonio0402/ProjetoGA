@@ -4,15 +4,22 @@
 #include <iostream>
 #include <fstream>
 
-#include "ExibirCreditos.h"
 #include "TelaAbertura.h"
+#include "TelaAtributos.h"
 
 using namespace std;
 
 int main()
 {
+    int acao = 0;
     TelaAbertura app;
-    app.chamarTela();
+    acao = app.init();
+
+    if (acao == 1) {
+        TelaAtributos telaAtributos;
+        telaAtributos.init();
+    }
+
     return 0;
 }
 

@@ -1,0 +1,15 @@
+Você decidiu então por entrar na caverna,acredita que existe uma saída que te levará a reencontrar seu velho amigo.
+Fazia muito tempo que você não entrava em um combate, você preferia ficar descansando, mas sabe que não tem muito tempo.
+Decidido em seguir em frente, a caverna é iluminada, o que faz pensar que alguem esta ali dentro.
+Você pensava ter sido silencioso, mas um Troll escutou a sua chegada e agora ele vem atrás de você.
+
+M: S
+N: Troll
+H: 5
+S: 8
+E: 12
+T: 20
+I: Machete;w;1;1;0
+P: 1
+
+XX;XY
