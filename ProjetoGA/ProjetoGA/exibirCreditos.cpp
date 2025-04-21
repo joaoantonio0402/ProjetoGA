@@ -10,8 +10,6 @@ ExibirCreditos::ExibirCreditos() {}
 void ExibirCreditos::imprimeCreditos() {
     set_nomeArquivo("ExibirCreditos.txt");
     ler();
-    cout << "\nPressione qualquer tecla para retornar:";
-    cin.ignore();
-    cin.get();
+    pressioneParaRetornar();
 
 }

@@ -18,10 +18,16 @@ void Tela::ler() {
     char proximo;
     ifstream entrada;
     entrada.open(nomeArquivo);
+
     entrada.get(proximo);
     while (!entrada.eof()) {
         cout << proximo;
         entrada.get(proximo);
     }
     entrada.close();
+}
+
+void Tela::pressioneParaRetornar() {
+    cout << "\nPressione qualquer tecla para retornar:";
+    cin.ignore().get();
 }
