@@ -5,6 +5,6 @@ Habilidade: 9
 Energia: 16
 Sorte: 11
 
-[ Machete, Couraca de pano, , , , , , , , , , , , , , , , , , ]
-
+Equipados: Machete, Couraca de pano (2/2)
+[ ] (0/18)
 

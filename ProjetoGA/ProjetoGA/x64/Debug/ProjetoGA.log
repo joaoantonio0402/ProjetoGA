@@ -1,14 +1,5 @@
-﻿  ProjetoGA.cpp
-C:\Users\Gabriel\source\repos\ProjetoGA\ProjetoGA\ProjetoGA\TelaInventario.h(3,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
-  (compilando o arquivo fonte 'ProjetoGA.cpp')
-  
-  TelaDeJogo.cpp
-C:\Users\Gabriel\source\repos\ProjetoGA\ProjetoGA\ProjetoGA\TelaInventario.h(3,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
-  (compilando o arquivo fonte 'TelaDeJogo.cpp')
-  
-  TelaInventario.cpp
+﻿  TelaInventario.cpp
 C:\Users\Gabriel\source\repos\ProjetoGA\ProjetoGA\ProjetoGA\TelaInventario.h(3,10): warning C4067: tokens inesperados após diretiva de pré-processador - esperado um newline
   (compilando o arquivo fonte 'TelaInventario.cpp')
   
-  Gerando Código...
   ProjetoGA.vcxproj -> C:\Users\Gabriel\Source\Repos\ProjetoGA\ProjetoGA\x64\Debug\ProjetoGA.exe

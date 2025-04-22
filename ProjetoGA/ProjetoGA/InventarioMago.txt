@@ -1,0 +1,10 @@
+
+------------------INVENTARIO------------------
+Personagem: Mago
+Habilidade: 9
+Energia: 16
+Sorte: 11
+
+Equipados: Anel de Doran, Tunica diferenciada (2/2)
+[ ] (0/18)
+
