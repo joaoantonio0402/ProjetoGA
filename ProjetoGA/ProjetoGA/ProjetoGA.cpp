@@ -29,8 +29,9 @@ int main()
         vector<Item*> inventario;
 
         TelaInventario telaInventario(tipoPersonagem, telaAtributos.get_habilidade(), telaAtributos.get_energia(), telaAtributos.get_sorte());
+        telaInventario.init();
         int cena = 1;
-        TelaDeJogo jogo(&cena, inventario);
+        TelaDeJogo jogo(&cena, &telaInventario);
         while (cena != 0) {
             jogo.jogar();
         }

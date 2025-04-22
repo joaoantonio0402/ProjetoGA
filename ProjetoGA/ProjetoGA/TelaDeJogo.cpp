@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-TelaDeJogo::TelaDeJogo(int* cena, vector<Item*>& inventario)
+TelaDeJogo::TelaDeJogo(int* cena, TelaInventario* inventario)
     : cena(cena), inventario(inventario) {
 }
 void TelaDeJogo::jogar() {

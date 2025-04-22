@@ -47,13 +47,13 @@ void TelaAtributos::init() {
 }
 
 int TelaAtributos::get_habilidade() {
-	return habilidade;
+	return habilidade + 6;
 }
 
 int TelaAtributos::get_energia() {
-	return energia;
+	return energia + 12;
 }
 
 int TelaAtributos::get_sorte() {
-	return sorte;
+	return sorte + 6;
 }
