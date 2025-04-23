@@ -13,6 +13,9 @@ void TelaDeJogo::jogar() {
     coletarItem(to_string(*cena) + ".txt");
 	int opcao = aguardaResposta();
 	*cena = opcao;
+    if (opcao == 'e') { // Tecla para chamar o inventario em qualquer acao
+        inventario->imprimirInventario(true);
+    }
 }
 void TelaDeJogo::coletarItem(string nomeArquivo){
     ifstream arquivo(nomeArquivo);

@@ -19,13 +19,14 @@ int main()
     TelaAbertura app;
     acao = app.init();
 
-    if (acao == 1) {
-        string tipoPersonagem;
+    if (acao == 1) { // Condicao de um novo jogo
+       
         TelaAtributos telaAtributos;
-        telaAtributos.init();
+        telaAtributos.init(); // Inicia a tela para definir os valores de habilidade, energia e sorte
 
+        string tipoPersonagem; // Variavel que armazena o nome do tipo do personagem
         TelaEscolhaPersonagem telaEscolhaPersonagem;
-        tipoPersonagem = telaEscolhaPersonagem.init();
+        tipoPersonagem = telaEscolhaPersonagem.init(); // Inicia a tela para definir o tipo do personagem, Guerreiro ou Mago
         vector<Item*> inventario;
 
         TelaInventario telaInventario(tipoPersonagem, telaAtributos.get_habilidade(), telaAtributos.get_energia(), telaAtributos.get_sorte());

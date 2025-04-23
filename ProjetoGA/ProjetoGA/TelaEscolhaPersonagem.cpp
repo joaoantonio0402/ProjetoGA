@@ -8,7 +8,7 @@
 TelaEscolhaPersonagem::TelaEscolhaPersonagem() : Tela() {
 }
 
-string TelaEscolhaPersonagem::init() {
+string TelaEscolhaPersonagem::init() { // Retorna o nome do tipo do personagem
 	int tipoPersonagem;
 
 	set_nomeArquivo("TelaEscolhaPersonagem.txt");
@@ -21,6 +21,11 @@ string TelaEscolhaPersonagem::init() {
 		}
 		else if (tipoPersonagem == 2) {
 			return "Mago";
+		}
+		else {
+			cout << "\nValor invalido" << endl;
+			ler();
+			cin >> tipoPersonagem;
 		}
 	}
 }
