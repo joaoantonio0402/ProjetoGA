@@ -57,13 +57,13 @@ void TelaInventario::init() {
 	pressioneParaRetornar();
 }
 
-void TelaInventario::adicionarItemInventario(Item item) {
+void TelaInventario::adicionarItemInventario(string nomeItem) {
 	//Nao permite o usuario adicionar itens com inventario lotado
 	if (cntItensInventario >= 18) {
 		cout << "Invetario Lotado" << endl;
 		return;
 	}
-	itens[cntItensInventario] = item.get_nome(); //Adiciona o nome do item na posicao do contador
+	itens[cntItensInventario] = nomeItem; //Adiciona o nome do item na posicao do contador
 	cntItensInventario++;
 
 	atualizarItens(); //Funcao que atualiza os itens do inventario
@@ -91,22 +91,22 @@ void TelaInventario::removerItemInventario(string nomeItem) {
 		if (itens[i] == nomeItem) {
 			itemEncontrado = true;
 
-			// Desloca os itens posteriores para preencher o espaço
+			// Desloca os itens posteriores para preencher o espaï¿½o
 			for (int j = i; j < cntItensInventario - 1; ++j) {
 				itens[j] = itens[j + 1];
 			}
 
-			// Limpa o último item e decrementa o contador
+			// Limpa o ï¿½ltimo item e decrementa o contador
 			itens[cntItensInventario - 1] = "";
 			cntItensInventario--;
 
 			cout << "Item '" << nomeItem << "' removido com sucesso!" << endl;
-			break; // Sai do loop após remover
+			break; // Sai do loop apï¿½s remover
 		}
 	}
 
 	if (!itemEncontrado) {
-		cout << "Item '" << nomeItem << "' não encontrado no inventário!" << endl;
+		cout << "Item '" << nomeItem << "' nï¿½o encontrado no inventï¿½rio!" << endl;
 	}
 	atualizarItens(); //Funcao que atualiza os itens do inventario
 	return;
@@ -120,22 +120,22 @@ void TelaInventario::removerItemEquipado(Item item) {
 		if (itensEquipados[i] == item.get_nome()) {
 			itemEncontrado = true;
 
-			// Desloca os itens posteriores para preencher o espaço
+			// Desloca os itens posteriores para preencher o espaï¿½o
 			for (int j = i; j < cntItensEquipados - 1; ++j) {
 				itensEquipados[j] = itensEquipados[j + 1];
 			}
 
-			// Limpa o último item e decrementa o contador
+			// Limpa o ï¿½ltimo item e decrementa o contador
 			itensEquipados[cntItensEquipados - 1] = "";
 			cntItensEquipados--;
 
 			cout << "Item '" << item.get_nome() << "' removido com sucesso!" << endl;
-			break; // Sai do loop após remover
+			break; // Sai do loop apï¿½s remover
 		}
 	}
 
 	if (!itemEncontrado) {
-		cout << "Item '" << item.get_nome() << "' não encontrado no inventário!" << endl;
+		cout << "Item '" << item.get_nome() << "' nï¿½o encontrado no inventï¿½rio!" << endl;
 	}
 
 	atualizarItens(); // Funcao que atualiza os itens do inventario
@@ -147,7 +147,7 @@ void TelaInventario::atualizarItens() {
 
 	for (size_t i = 0; i < itens.size(); i++) { //Percorre o array de itens
 		if (!itensStr.empty()) { //Aplica a condicao somente se existir algum item no array
-			itensStr += ", "; // Adiciona vírgula entre itens
+			itensStr += ", "; // Adiciona vï¿½rgula entre itens
 		}
 		itensStr += itens[i]; //Concatena o valor de itens[i] com o valor da variavel
 	}
@@ -164,6 +164,7 @@ void TelaInventario::substituirItem(string i_equipado, string i_inventario) { //
 	// Procura o item equipado
 	for (int i = 0; i < cntItensEquipados; ++i) {
 		if (itensEquipados[i] == i_equipado) {
+			// Se o item equipado for encontrado, armazena a posicao
 			equipadoEncontrado = true;
 			posEquipado = i;
 			break;
@@ -173,19 +174,20 @@ void TelaInventario::substituirItem(string i_equipado, string i_inventario) { //
 	// Procura o item do inventario
 	for (int i = 0; i < cntItensInventario; ++i) {
 		if (itens[i] == i_inventario) {
+			// Se o item do inventario for encontrado, armazena a posicao
 			inventarioEncontrado = true;
 			posInventario = i;
 			break;
 		}
 	}
 
-	if (!equipadoEncontrado) {
-		cout << "Item equipado '" << i_equipado << "' não encontrado!" << endl;
+	if (!equipadoEncontrado) { // Se o item equipado nÃ£o for encontrado, imprime mensagem de erro
+		cout << "Item equipado '" << i_equipado << "' nï¿½o encontrado!" << endl;
 		return;
 	}
 
-	if (!inventarioEncontrado) {
-		cout << "Item do inventário '" << i_inventario << "' não encontrado!" << endl;
+	if (!inventarioEncontrado) { // Se o item do inventario nÃ£o for encontrado, imprime mensagem de erro
+		cout << "Item do inventï¿½rio '" << i_inventario << "' nï¿½o encontrado!" << endl;
 		return;
 	}
 
@@ -197,11 +199,8 @@ void TelaInventario::substituirItem(string i_equipado, string i_inventario) { //
 	atualizarItens(); // Funcao que atualiza os itens do inventario
 }
 
-void TelaInventario::imprimirInventario(bool modificar) { // Caso o usuario possa modificar o inventario
+void TelaInventario::imprimirInventario() { // Caso o usuario possa modificar o inventario
 	ler();
-	if (modificar == true) {
-		modificarInventario();
-	};
 	pressioneParaRetornar();
 	return;
 }
@@ -212,23 +211,27 @@ void TelaInventario::modificarInventario() { // Funcao caso o usuario chame o in
 	string itemAdicionado = "";
 	string itemEquipado = "";
 
+	ler(); // Carrega o arquivo do inventario
+
 	cout << "remover(1)" << endl;
 	cout << "substituir(2)" << endl;
-	cout << "Digite o codigo do que deseja realizar no seu inventario ou qualquer outro valor para sair: ";
-	cin >> opcao;
-	switch (opcao) {
+	cout << "Digite o codigo do que deseja realizar no seu inventario ou 0 para sair: ";
+	cin >> opcao; // Aguarda a resposta do usuario
+	switch (opcao) { // Verifica a acao escolhida
 	case 1:
 		cout << "Digite o nome do item que deseja remover: ";
 		cin >> itemRemovido;
 		removerItemInventario(itemRemovido);
+		break; // Adiciona o break para evitar que o usuario entre na proxima condicao sem querer
 	
-	case 2:
+	case 2: // Substitui um item equipado por um item do inventario
 		cout << "Digite o nome do item equipado: ";
 		cin >> itemEquipado;
 		cout << "Digite o nome do item do inventario: ";
 		cin >> itemAdicionado;
-		substituirItem(itemEquipado, itemAdicionado);
-	default:
+		substituirItem(itemEquipado, itemAdicionado); // Substitui o item equipado pelo item do inventario
+		break; // Adiciona o break para evitar que o usuario entre na proxima condicao sem querer
+	case 0:
 		break;
 	}
 	return;

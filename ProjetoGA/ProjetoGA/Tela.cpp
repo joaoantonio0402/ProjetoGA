@@ -15,25 +15,25 @@ void Tela::set_nomeArquivo(string s_nomeArquivo) {
 }
 
 void Tela::ler() {
-    char proximo;
-    ifstream entrada;
-    entrada.open(nomeArquivo);
+    char proximo; // Variavel que armazena o proximo caractere lido
+    ifstream entrada; // Variavel que armazena o arquivo
+    entrada.open(nomeArquivo); // Abre o arquivo
 
-    entrada.get(proximo);
-    while (!entrada.eof()) {
-        cout << proximo;
-        entrada.get(proximo);
+    entrada.get(proximo); // Lê o primeiro caractere do arquivo
+    while (!entrada.eof()) { // Enquanto não chegar ao fim do arquivo
+        cout << proximo; // Imprime o caractere lido
+        entrada.get(proximo); // Lê o próximo caractere do arquivo
     }
-    entrada.close();
+    entrada.close(); // Fecha o arquivo
 }
 
 void Tela::pressioneParaRetornar() {
     cout << "\nPressione qualquer tecla para retornar:";
     cin.ignore().get();
 }
-int Tela::aguardaResposta() {
-    int opcao = 0;
-    cout << "\nEscolha a op��o desejada";
+char Tela::aguardaResposta() {
+    char opcao = '0';
+    cout << "\nEscolha a op��o desejada";
     cin >> opcao;
     return opcao;
 }

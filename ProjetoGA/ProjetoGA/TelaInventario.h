@@ -1,6 +1,6 @@
 #pragma once
 
-#include <string>;
+#include <string>
 #include <vector>
 
 #include "Tela.h"
@@ -10,12 +10,13 @@ class TelaInventario: public Tela
 public:
 	TelaInventario(string, int, int, int);
 	void init();
-	void adicionarItemInventario(Item);
+	void adicionarItemInventario(string);
 	void removerItemInventario(string);
 	void substituirItem(string, string); // Substitui um item equipado por um item do inventario
 	void adicionarItemEquipado(Item);
 	void removerItemEquipado(Item);
-	void imprimirInventario(bool);
+	void imprimirInventario();
+	void modificarInventario();
 private:
 	string tipoPersonagem; //Valor esperado como parametro
 	int habilidade; //Valor esperado como parametro
@@ -27,6 +28,6 @@ private:
 	vector<string> itensEquipados; // Array que armazena os itens equipados
 	vector<string> linhasArquivo; // Array que armazena as string que irao virar as linhas do arquivo
 	void atualizarItens(); // Funcao que atualiza os itens do inventario
-	void modificarInventario();
+	
 };
 

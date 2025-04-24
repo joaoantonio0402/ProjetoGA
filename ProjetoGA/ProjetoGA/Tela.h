@@ -11,7 +11,7 @@ public:
 	void set_nomeArquivo(string);
 	void ler();
 	void pressioneParaRetornar();
-	int aguardaResposta();
+	char aguardaResposta();
 private:
 	string nomeArquivo;
 };

@@ -15,7 +15,7 @@ using namespace std;
 
 int main()
 {
-    int acao = 0;
+    int acao = 0; // Variavel que armazena a acao do usuario
     TelaAbertura app;
     acao = app.init();
 
@@ -25,16 +25,16 @@ int main()
         telaAtributos.init(); // Inicia a tela para definir os valores de habilidade, energia e sorte
 
         string tipoPersonagem; // Variavel que armazena o nome do tipo do personagem
-        TelaEscolhaPersonagem telaEscolhaPersonagem;
+        TelaEscolhaPersonagem telaEscolhaPersonagem; // Cria um objeto da classe TelaEscolhaPersonagem
         tipoPersonagem = telaEscolhaPersonagem.init(); // Inicia a tela para definir o tipo do personagem, Guerreiro ou Mago
         vector<Item*> inventario;
 
         TelaInventario telaInventario(tipoPersonagem, telaAtributos.get_habilidade(), telaAtributos.get_energia(), telaAtributos.get_sorte());
-        telaInventario.init();
+        telaInventario.init(); // Inicia a tela do inventario, que carrega os itens do personagem e imprime na tela
         int cena = 1;
-        TelaDeJogo jogo(&cena, &telaInventario);
-        while (cena != 0) {
-            jogo.jogar();
+        TelaDeJogo jogo(&cena, &telaInventario); // Cria um objeto da classe TelaDeJogo, que inicia o jogo
+        while (cena != 0) { // Enquanto a cena for diferente de 0, o jogo continua
+            jogo.jogar(); // Inicia a tela de jogo, que imprime as opcoes de acao do personagem
         }
     }
 
