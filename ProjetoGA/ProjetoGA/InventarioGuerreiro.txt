@@ -2,9 +2,9 @@
 ------------------INVENTARIO------------------
 Sempre que quiser chamar seu inventario digite 'e'
 Personagem: Guerreiro
-Habilidade: 9
-Energia: 16
-Sorte: 11
+Habilidade: 7
+Energia: 13
+Sorte: 7
 
 Equipados: Machete, Couraca de pano (2/2)
 [ ] (0/18)

@@ -18,7 +18,8 @@ void TelaDeJogo::jogar() {
         ler();
         opcao = aguardaResposta();
     }
-    *cena = int(opcao); // Atualiza a cena com a opcao escolhida
+
+    *cena = opcao - '0'; // Atualiza a cena com a opcao escolhida
 }
 void TelaDeJogo::coletarItem(string nomeArquivo){
     ifstream arquivo(nomeArquivo);
