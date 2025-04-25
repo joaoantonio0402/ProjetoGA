@@ -1,0 +1,12 @@
+m
+Um esqueleto armado surge das sombras, levantando sua espada rachada!
+
+N: Esqueleto Antigo
+M: S
+H: 8
+S: 6
+E: 10
+T: 50
+P: 1
+I: elmo enferrujado;r;1;-1;-1
+4;gameover

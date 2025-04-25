@@ -1,0 +1,12 @@
+m
+Uma criatura rastejante pula em você com garras afiadas!
+
+N: Morcego das Sombras
+M: S
+H: 7
+S: 5
+E: 8
+T: 30
+P: 1
+I: garras das trevas;w;1;1;0
+4;gameover

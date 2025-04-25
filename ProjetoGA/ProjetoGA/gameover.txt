@@ -1,0 +1,2 @@
+#gameover
+Você foi derrotado. A Fortaleza das Sombras devora sua alma. Fim da jornada.

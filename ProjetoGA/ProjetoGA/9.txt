@@ -1,0 +1,12 @@
+m
+O Senhor das Sombras surge com olhos flamejantes. Ele não permitirá que você avance.
+
+N: Senhor das Sombras
+M: S
+H: 12
+S: 10
+E: 20
+T: 500
+P: 2
+I: olho de virell;c;0;0;0
+10;gameover
