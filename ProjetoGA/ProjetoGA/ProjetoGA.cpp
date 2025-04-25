@@ -4,6 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include "Personagem.h"
 #include "TelaAbertura.h"
 #include "TelaAtributos.h"
 #include "TelaEscolhaPersonagem.h"
@@ -29,10 +30,11 @@ int main()
         tipoPersonagem = telaEscolhaPersonagem.init(); // Inicia a tela para definir o tipo do personagem, Guerreiro ou Mago
         vector<Item*> inventario;
 
-        TelaInventario telaInventario(tipoPersonagem, telaAtributos.get_habilidade(), telaAtributos.get_energia(), telaAtributos.get_sorte());
+        Personagem personagem;
+        TelaInventario telaInventario(tipoPersonagem, telaAtributos.get_habilidade(), telaAtributos.get_energia(), telaAtributos.get_sorte(), &personagem);
         telaInventario.init(); // Inicia a tela do inventario, que carrega os itens do personagem e imprime na tela
         int cena = 1;
-        TelaDeJogo jogo(&cena, &telaInventario); // Cria um objeto da classe TelaDeJogo, que inicia o jogo
+        TelaDeJogo jogo(&cena, &telaInventario, personagem); // Cria um objeto da classe TelaDeJogo, que inicia o jogo
         while (cena != 0) { // Enquanto a cena for diferente de 0, o jogo continua
             jogo.jogar(); // Inicia a tela de jogo, que imprime as opcoes de acao do personagem
         }

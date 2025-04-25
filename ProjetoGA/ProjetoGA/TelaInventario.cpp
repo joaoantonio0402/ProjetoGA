@@ -6,8 +6,8 @@
 
 using namespace std;
 
-TelaInventario::TelaInventario(string tipoPersonagem, int habilidade, int energia, int sorte) :
-	Tela(), itens(), itensEquipados(2), linhasArquivo(12) {
+TelaInventario::TelaInventario(string tipoPersonagem, int habilidade, int energia, int sorte, Personagem* personagem) :
+	Tela(), itens(), itensEquipados(2), linhasArquivo(12), personagem(personagem) {
 	this->tipoPersonagem = tipoPersonagem;
 	this->habilidade = habilidade;
 	this->energia = energia;

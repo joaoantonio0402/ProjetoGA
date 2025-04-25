@@ -8,5 +8,5 @@ Sorte: 11
 Tesouro: 0
 Provisoes: 0
 
-Equipados: Anel de Doran, Tunica diferenciada (2/2)
-[ chave] (1/18)
+Provisoes: 1
+[ Machete] (1/18)

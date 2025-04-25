@@ -4,12 +4,17 @@
 #include <string>
 using namespace std;
 
-TelaDeJogo::TelaDeJogo(int* cena, TelaInventario* inventario)
+TelaDeJogo::TelaDeJogo(int* cena, TelaInventario* inventario, Personagem personagem)
     : cena(cena), inventario(inventario) { // Inicializa o ponteiro cena e o ponteiro inventario
+    
+    this->telaBatalha = TelaBatalha(personagem);
 }
 void TelaDeJogo::jogar() {
 	set_nomeArquivo(to_string(*cena) + ".txt"); // Nome do arquivo que armazena a cena atual
 	ler();
+
+
+    telaBatalha.init((to_string(*cena) + ".txt"));
     coletarItem(to_string(*cena) + ".txt"); // Coleta os itens da cena atual
 	char opcao = aguardaResposta(); // Lê a opção do usuário
     while (opcao == 'e') { // Tecla para chamar o inventario em qualquer acao
