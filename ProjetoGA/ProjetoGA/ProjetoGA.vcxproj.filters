@@ -106,6 +106,14 @@
     <Text Include="3.txt" />
     <Text Include="InventarioGuerreiro.txt" />
     <Text Include="InventarioMago.txt" />
+    <Text Include="telaBatalha.txt" />
+    <Text Include="..\..\..\..\..\Downloads\5.txt" />
+    <Text Include="..\..\..\..\..\Downloads\6.txt" />
+    <Text Include="..\..\..\..\..\Downloads\9.txt" />
+    <Text Include="..\..\..\..\..\Downloads\10.txt" />
+    <Text Include="..\..\..\..\..\Downloads\gameover.txt" />
+    <Text Include="..\..\..\..\..\Downloads\7.txt" />
+    <Text Include="..\..\..\..\..\Downloads\8.txt" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ProjetoGA.rc">

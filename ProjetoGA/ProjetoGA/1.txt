@@ -1,6 +1,5 @@
 #1
-Voce caminha pela floresta escura e avista ao longe a imponente Fortaleza das Sombras. As lendas dizem que quem entra ali raramente sai com vida. Diante de voce estao duas entradas: a porta principal, enferrujada mas destrancada, e um alcapao escondido sob folhas secas.
+Você está diante da Fortaleza das Sombras. Dizem que ela guarda o Olho de Virell, um artefato de poder sombrio.
 
 #2: Entrar pela porta principal
-#3: Abrir o alcapao e descer furtivamente
----------------------------------------------------------------------------------------------------------------------
+#3: Procurar por uma entrada secreta

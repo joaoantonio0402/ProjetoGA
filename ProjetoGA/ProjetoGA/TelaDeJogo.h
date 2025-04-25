@@ -8,10 +8,11 @@
 class TelaDeJogo : public Tela
 {
 public:
-	TelaDeJogo(int* cena, TelaInventario *inventario, Personagem personagem);
+	TelaDeJogo(int* cena, TelaInventario *inventario, Personagem& personagem);
 	void jogar();
 	void coletarItem(string arquivo);
 private:
+	Personagem& personagem;
 	int* cena;
 	string arquivo;
 	TelaInventario *inventario;

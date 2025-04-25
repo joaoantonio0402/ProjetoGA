@@ -33,7 +33,7 @@ void Tela::pressioneParaRetornar() {
 }
 char Tela::aguardaResposta() {
     char opcao = '0';
-    cout << "\nEscolha a op��o desejada";
+    cout << "\nEscolha a opcao desejada:";
     cin >> opcao;
     return opcao;
 }
