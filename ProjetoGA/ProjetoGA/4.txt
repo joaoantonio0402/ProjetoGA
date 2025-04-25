@@ -1,0 +1,11 @@
+Voce esta seguindo seu caminho quando, de repente, um Troll aparece bem na sua frente!!
+
+M:S
+N:Troll
+H:5
+S:8
+E:12
+T:20
+I:Machete;w;1;1;0
+P:1
+6;2

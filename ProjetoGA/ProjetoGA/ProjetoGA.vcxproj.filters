@@ -42,6 +42,15 @@
     <ClCompile Include="Item.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
+    <ClCompile Include="TelaBatalha.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Monstro.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Personagem.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ExibirCreditos.h">
@@ -71,6 +80,15 @@
     <ClInclude Include="Item.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
+    <ClInclude Include="TelaBatalha.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Monstro.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="Personagem.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ExibirCreditos.txt" />
@@ -80,7 +98,7 @@
     <Text Include="I_MalhaDePano.txt" />
     <Text Include="I_AnelDeDoran.txt" />
     <Text Include="I_EspigaDeMilho.txt" />
-    <Text Include="M_Troll.txt" />
+    <Text Include="4.txt" />
     <Text Include="DefinirAtributos.txt" />
     <Text Include="TelaEscolhaPersonagem.txt" />
     <Text Include="1.txt" />
