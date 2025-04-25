@@ -10,7 +10,10 @@ class TelaBatalha: public Tela
 public:
 	TelaBatalha(Personagem& personagem);
 	void init(string);
+	bool batalhaIniciada;
+	char resultadoBatalha();
 private:
+	char opcao;
 	string nomeArquivo;
 	int p_habilidade;
 	int p_sorte;

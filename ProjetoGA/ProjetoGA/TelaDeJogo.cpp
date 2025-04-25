@@ -9,21 +9,27 @@ TelaDeJogo::TelaDeJogo(int* cena, TelaInventario* inventario, Personagem& person
    
 }
 void TelaDeJogo::jogar() {
+    char opcao = ' ';
 	set_nomeArquivo(to_string(*cena) + ".txt"); // Nome do arquivo que armazena a cena atual
 	ler();
 
 
     telaBatalha.init((to_string(*cena) + ".txt"));
-    coletarItem(to_string(*cena) + ".txt"); // Coleta os itens da cena atual
-	char opcao = aguardaResposta(); // Lê a opção do usuário
-    while (opcao == 'e') { // Tecla para chamar o inventario em qualquer acao
-        inventario->modificarInventario(); // Chama a tela do inventario
-        // Retorna para a condição anterior
-        ler();
-        opcao = aguardaResposta();
+    if(!telaBatalha.batalhaIniciada){
+        coletarItem(to_string(*cena) + ".txt"); // Coleta os itens da cena atual
+        opcao = aguardaResposta(); // Lê a opção do usuário
+        while (opcao == 'e') { // Tecla para chamar o inventario em qualquer acao
+            inventario->modificarInventario(); // Chama a tela do inventario
+            // Retorna para a condição anterior
+            ler();
+            opcao = aguardaResposta();
+        }
+        *cena = opcao - '0';
     }
-
-    *cena = opcao - '0'; // Atualiza a cena com a opcao escolhida
+    else {
+        char resultado = telaBatalha.resultadoBatalha();
+        *cena = resultado - '0';
+    }
 }
 void TelaDeJogo::coletarItem(string nomeArquivo){
     ifstream arquivo(nomeArquivo);

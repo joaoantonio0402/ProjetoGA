@@ -15,15 +15,19 @@ TelaBatalha::TelaBatalha(Personagem& personagem) :
     p_sorte(personagem.get_sorte()) {
 
     this->monstro = Monstro();
+    this->batalhaIniciada = false;
+    this->opcao = ' ';
 }
 
 
 void TelaBatalha::init(string nomeArquivo) {
+    batalhaIniciada = false;
     ifstream arquivo(nomeArquivo);
     string linha;
     while (getline(arquivo, linha)) {
 
         if (linha.find("M:") == 0) {
+            batalhaIniciada = true;
             int acao = 0;
             monstro.set_nomeArquivo(nomeArquivo);
             monstro.init();
@@ -42,12 +46,10 @@ void TelaBatalha::init(string nomeArquivo) {
             }
             else if (acao == 2) {
                 cout << "Voce fugiu!" << endl;
-                return;
+                exit(0);
             }
-            
-            
         }
-    }
+   }
     arquivo.close();
     return;    
 }
@@ -73,10 +75,13 @@ void TelaBatalha::iniciaBatalha() {
     }
     if (energiaMonstro <= 0) {
         cout << "Voce derrotou o monstro" << endl;
+        opcao = monstro.get_cenaVencer();
     }
     else {
         cout << "Voce foi derrotado" << endl;
+        monstro.get_cenaPerder();
     }
+    batalhaIniciada = false;
 }
 
 int TelaBatalha::numeroAleatorio() {
@@ -100,4 +105,8 @@ void TelaBatalha::bufferParaArquivo() {
         }
     }
     outfile.close();
+}
+
+char TelaBatalha::resultadoBatalha() {
+    return opcao;
 }
