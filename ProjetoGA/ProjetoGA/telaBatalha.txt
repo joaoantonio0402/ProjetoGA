@@ -1,0 +1,6 @@
+------------------BATALHA------------------
+
+
+(1) Atacar
+(2) Fugir
+Escolha a opcao desejada:

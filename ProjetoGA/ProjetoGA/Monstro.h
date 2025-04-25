@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 
 using namespace std;
 
@@ -9,6 +10,7 @@ public:
 	void set_nomeArquivo(string);
 	void ler();
 	void init();
+	string get_nome();
 	int get_habilidade();
 	int get_sorte();
 	int get_energia();
@@ -16,6 +18,7 @@ public:
 	int get_provisao();
 private:
 	string nomeArquivo;
+	string nome;
 	int habilidade;
 	int sorte;
 	int energia;

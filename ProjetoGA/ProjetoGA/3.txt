@@ -1,5 +1,5 @@
 #3
-Voce desce pelo alcapao e pisa em uma armadilha de espinhos. Sofre ferimentos leves, mas continua. A sua frente ha duas passagens.
+Você encontra um túnel escondido sob uma pedra. Parece levar para dentro da fortaleza.
 
-#4: Ir pela passagem estreita a esquerda
-#6: Subir uma escada enferrujada
+#4: Seguir pelo túnel iluminado
+#6: Descer por um buraco escuro no chão

@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 
 #include "Personagem.h"
 #include "Tela.h"
@@ -7,8 +8,7 @@
 class TelaBatalha: public Tela
 {
 public:
-	TelaBatalha();
-	TelaBatalha(Personagem);
+	TelaBatalha(Personagem& personagem);
 	void init(string);
 private:
 	string nomeArquivo;
@@ -20,6 +20,8 @@ private:
 	Monstro monstro;
 	void iniciaBatalha();
 	int numeroAleatorio();
-	Personagem personagem;
+	void bufferParaArquivo();
+	vector<string> linhasArquivo; // Array que armazena as string que irao virar as linhas do arquivo
+	Personagem& personagem;
 };
 

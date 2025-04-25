@@ -1,11 +1,5 @@
-Voce esta seguindo seu caminho quando, de repente, um Troll aparece bem na sua frente!!
+#4
+Você está em uma sala circular com inscrições nas paredes. Há duas saídas visíveis.
 
-M:S
-N:Troll
-H:5
-S:8
-E:12
-T:20
-I:Machete;w;1;1;0
-P:1
-6;2
+#7: Subir uma escada iluminada
+#6: Descer para uma cripta mal iluminada

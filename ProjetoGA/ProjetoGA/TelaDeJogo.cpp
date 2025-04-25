@@ -4,10 +4,9 @@
 #include <string>
 using namespace std;
 
-TelaDeJogo::TelaDeJogo(int* cena, TelaInventario* inventario, Personagem personagem)
-    : cena(cena), inventario(inventario) { // Inicializa o ponteiro cena e o ponteiro inventario
-    
-    this->telaBatalha = TelaBatalha(personagem);
+TelaDeJogo::TelaDeJogo(int* cena, TelaInventario* inventario, Personagem& personagem)
+    : cena(cena), inventario(inventario), personagem(personagem), telaBatalha(TelaBatalha(personagem)) { // Inicializa o ponteiro cena e o ponteiro inventario
+   
 }
 void TelaDeJogo::jogar() {
 	set_nomeArquivo(to_string(*cena) + ".txt"); // Nome do arquivo que armazena a cena atual

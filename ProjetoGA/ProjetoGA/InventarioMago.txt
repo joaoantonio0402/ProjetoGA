@@ -9,4 +9,4 @@ Tesouro: 0
 Provisoes: 0
 
 Provisoes: 1
-[ Machete] (1/18)
+[ chave, Machete] (2/18)

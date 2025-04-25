@@ -34,8 +34,13 @@ void Monstro::ler() {
 void Monstro::init() {
     ifstream arquivo(nomeArquivo);
     string linha;
+    string ultimaLinha;
+    size_t pos;
+    string cenaVencer;
+    string cenaPerder;
 
     while (getline(arquivo, linha)) {
+        ultimaLinha = linha;
         if (linha.find("H:") == 0) {
             habilidade = stoi(linha.substr(2));
         }
@@ -51,7 +56,17 @@ void Monstro::init() {
         else if (linha.find("P:") == 0) {
             provisao = stoi(linha.substr(2));
         }
+        else if (linha.find("N:") == 0) {
+            nome = linha.substr(2);
+        }
     }
+    pos = ultimaLinha.find(';');
+    cenaVencer = ultimaLinha.substr(0, pos);
+    cenaPerder = ultimaLinha.substr(pos + 1);
+}
+
+string Monstro::get_nome() {
+    return nome;
 }
 
 int Monstro::get_habilidade() {

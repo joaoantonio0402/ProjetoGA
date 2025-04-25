@@ -21,6 +21,11 @@ TelaInventario::TelaInventario(string tipoPersonagem, int habilidade, int energi
 }
 
 void TelaInventario::init() {
+	//Move os valores para o personagem
+	personagem->set_habilidade(habilidade);
+	personagem->set_energia(energia);
+	personagem->set_sorte(sorte);
+
 	if (tipoPersonagem == "Guerreiro") {
 		arquivo = "InventarioGuerreiro.txt"; //Carrega inventario do Guerreiro
 		itensEquipados[0] = "Machete"; // Adiciona item equipado
