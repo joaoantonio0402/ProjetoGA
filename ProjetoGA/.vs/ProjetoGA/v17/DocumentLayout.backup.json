@@ -1,10 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\ProjetoGA\\ProjetoGA\\",
+  "WorkspaceRootPath": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\ProjetoGA\\ProjetoGA\\ProjetoGA\\ProjetoGA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaInventario.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\TelaInventario.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaInventario.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\TelaInventario.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaDeJogo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\TelaDeJogo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\3.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\3.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\2.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\2.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\Tela.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\Tela.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaDeJogo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\TelaDeJogo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\ProjetoGA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\ProjetoGA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaEscolhaPersonagem.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\TelaEscolhaPersonagem.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +54,169 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "3.txt",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\3.txt",
+              "RelativeDocumentMoniker": "ProjetoGA\\3.txt",
+              "ToolTip": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\3.txt",
+              "RelativeToolTip": "ProjetoGA\\3.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-25T03:29:53.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Tela.cpp",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\Tela.cpp",
+              "RelativeDocumentMoniker": "ProjetoGA\\Tela.cpp",
+              "ToolTip": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\Tela.cpp",
+              "RelativeToolTip": "ProjetoGA\\Tela.cpp",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAB8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-25T02:23:40.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TelaDeJogo.cpp",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaDeJogo.cpp",
+              "RelativeDocumentMoniker": "ProjetoGA\\TelaDeJogo.cpp",
+              "ToolTip": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaDeJogo.cpp",
+              "RelativeToolTip": "ProjetoGA\\TelaDeJogo.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-21T17:52:49.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TelaDeJogo.h",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaDeJogo.h",
+              "RelativeDocumentMoniker": "ProjetoGA\\TelaDeJogo.h",
+              "ToolTip": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaDeJogo.h",
+              "RelativeToolTip": "ProjetoGA\\TelaDeJogo.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-21T17:49:23.086Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TelaInventario.cpp",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaInventario.cpp",
+              "RelativeDocumentMoniker": "ProjetoGA\\TelaInventario.cpp",
+              "ToolTip": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaInventario.cpp",
+              "RelativeToolTip": "ProjetoGA\\TelaInventario.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-21T16:50:54.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TelaInventario.h",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaInventario.h",
+              "RelativeDocumentMoniker": "ProjetoGA\\TelaInventario.h",
+              "ToolTip": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaInventario.h",
+              "RelativeToolTip": "ProjetoGA\\TelaInventario.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADgvxgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-21T16:59:29.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ProjetoGA.cpp",
-              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\ProjetoGA\\ProjetoGA\\ProjetoGA\\ProjetoGA.cpp",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\ProjetoGA.cpp",
               "RelativeDocumentMoniker": "ProjetoGA\\ProjetoGA.cpp",
-              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Documents\\GitHub\\ProjetoGA\\ProjetoGA\\ProjetoGA\\ProjetoGA.cpp",
+              "ToolTip": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\ProjetoGA.cpp",
               "RelativeToolTip": "ProjetoGA\\ProjetoGA.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-19T00:26:47.338Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "1.txt",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\1.txt",
+              "RelativeDocumentMoniker": "ProjetoGA\\1.txt",
+              "ToolTip": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\1.txt",
+              "RelativeToolTip": "ProjetoGA\\1.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-21T17:58:13.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "2.txt",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\2.txt",
+              "RelativeDocumentMoniker": "ProjetoGA\\2.txt",
+              "ToolTip": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\2.txt",
+              "RelativeToolTip": "ProjetoGA\\2.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-21T18:19:41.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TelaEscolhaPersonagem.txt",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaEscolhaPersonagem.txt",
+              "RelativeDocumentMoniker": "ProjetoGA\\TelaEscolhaPersonagem.txt",
+              "ToolTip": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaEscolhaPersonagem.txt",
+              "RelativeToolTip": "ProjetoGA\\TelaEscolhaPersonagem.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-25T00:04:41.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Item.cpp",
+              "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\Item.cpp",
+              "RelativeDocumentMoniker": "ProjetoGA\\Item.cpp",
+              "ToolTip": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\Item.cpp",
+              "RelativeToolTip": "ProjetoGA\\Item.cpp",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-21T19:42:11.41Z"
             }
           ]
         }

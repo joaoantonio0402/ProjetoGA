@@ -1,6 +1,6 @@
 #1
-Você caminha pela floresta escura e avista ao longe a imponente Fortaleza das Sombras. As lendas dizem que quem entra ali raramente sai com vida. Diante de você estão duas entradas: a porta principal, enferrujada mas destrancada, e um alçapão escondido sob folhas secas.
+Voce caminha pela floresta escura e avista ao longe a imponente Fortaleza das Sombras. As lendas dizem que quem entra ali raramente sai com vida. Diante de voce estao duas entradas: a porta principal, enferrujada mas destrancada, e um alcapao escondido sob folhas secas.
 
 #2: Entrar pela porta principal
-#3: Abrir o alçapão e descer furtivamente
+#3: Abrir o alcapao e descer furtivamente
 ---------------------------------------------------------------------------------------------------------------------

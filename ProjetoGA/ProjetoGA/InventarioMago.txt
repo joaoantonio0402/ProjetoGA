@@ -2,9 +2,11 @@
 ------------------INVENTARIO------------------
 Sempre que quiser chamar seu inventario digite 'e'
 Personagem: Mago
-Habilidade: 8
-Energia: 14
-Sorte: 8
+Habilidade: 9
+Energia: 16
+Sorte: 11
+Tesouro: 0
+Provisoes: 0
 
 Equipados: Anel de Doran, Tunica diferenciada (2/2)
-[ ] (0/18)
+[ chave] (1/18)

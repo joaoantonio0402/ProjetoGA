@@ -7,18 +7,20 @@
 using namespace std;
 
 TelaInventario::TelaInventario(string tipoPersonagem, int habilidade, int energia, int sorte) :
-	Tela(), itens(18), itensEquipados(2), linhasArquivo(10) {
+	Tela(), itens(), itensEquipados(2), linhasArquivo(12) {
 	this->tipoPersonagem = tipoPersonagem;
 	this->habilidade = habilidade;
 	this->energia = energia;
+	this->energiaMax = energia;
 	this->sorte = sorte;
+	this->valorTesouro = 0;
 	this->cntItensInventario = 0;
 	this->cntItensEquipados = 2; // O jogador comeca com 2 itens equipados
+	this->cntProvisoes = 0;
+	this->arquivo = "";
 }
 
 void TelaInventario::init() {
-	string arquivo = ""; //Variavel que carrega o nome do arquivo do guerreiro ou mago
-	
 	if (tipoPersonagem == "Guerreiro") {
 		arquivo = "InventarioGuerreiro.txt"; //Carrega inventario do Guerreiro
 		itensEquipados[0] = "Machete"; // Adiciona item equipado
@@ -38,17 +40,14 @@ void TelaInventario::init() {
 	linhasArquivo[4] = "Habilidade: " + to_string(habilidade);
 	linhasArquivo[5] = "Energia: " + to_string(energia);
 	linhasArquivo[6] = "Sorte: " + to_string(sorte);
+	linhasArquivo[7] = "Tesouro: " + to_string(valorTesouro);
+	linhasArquivo[8] = "Provisoes: " + to_string(cntProvisoes);
 
 	atualizarItens(); //Funcao que atualiza os itens do inventario
 
-	//Escreve os valores de linhasArquivo no arquivo
-	ofstream outfile(arquivo); //Considera a variavel arquivo
-	if(outfile.is_open()) {
-		for(string linha : linhasArquivo){ // para cada linha(item) do vector linhasArquivo
-			outfile << linha << endl;
-		}
-	}
-	outfile.close();
+
+	bufferParaArquivo();
+	
 
 	//Imprime o conteudo do arquivo
 	set_nomeArquivo(arquivo);
@@ -59,24 +58,26 @@ void TelaInventario::init() {
 
 void TelaInventario::adicionarItemInventario(string nomeItem) {
 	//Nao permite o usuario adicionar itens com inventario lotado
+	
 	if (cntItensInventario >= 18) {
 		cout << "Invetario Lotado" << endl;
 		return;
 	}
-	itens[cntItensInventario] = nomeItem; //Adiciona o nome do item na posicao do contador
+	
+	itens.push_back(nomeItem); //Adiciona o nome do item no vetor
 	cntItensInventario++;
 
 	atualizarItens(); //Funcao que atualiza os itens do inventario
 	return;
 }
 
-void TelaInventario::adicionarItemEquipado(Item item) {
+void TelaInventario::adicionarItemEquipado(string nomeItem) {
 	//Nao permite o usuario adicionar itens equipados se estiver lotado
 	if (cntItensEquipados >= 2) {
 		cout << "Invetario Lotado" << endl;
 		return;
 	}
-	itensEquipados[cntItensEquipados] = item.get_nome(); //Adiciona o nome do item na posicao do contador
+	itensEquipados.push_back(nomeItem); //Adiciona o nome do item no vetor
 	cntItensEquipados++;
 
 	atualizarItens(); //Funcao que atualiza os itens do inventario
@@ -84,75 +85,53 @@ void TelaInventario::adicionarItemEquipado(Item item) {
 }
 
 void TelaInventario::removerItemInventario(string nomeItem) {
-	bool itemEncontrado = false;
+	// Usando algoritmo find para localizar o item
+	auto it = find(itens.begin(), itens.end(), nomeItem);
 
-	// Procura o item no vetor
-	for (int i = 0; i < cntItensInventario; ++i) {
-		if (itens[i] == nomeItem) {
-			itemEncontrado = true;
+	if (it != itens.end()) {
+		// Remove o item usando erase (mais eficiente que deslocamento manual)
+		itens.erase(it);
+		cntItensInventario--; // Atualiza o contador
 
-			// Desloca os itens posteriores para preencher o espa�o
-			for (int j = i; j < cntItensInventario - 1; ++j) {
-				itens[j] = itens[j + 1];
-			}
-
-			// Limpa o �ltimo item e decrementa o contador
-			itens[cntItensInventario - 1] = "";
-			cntItensInventario--;
-
-			cout << "Item '" << nomeItem << "' removido com sucesso!" << endl;
-			break; // Sai do loop ap�s remover
-		}
+		cout << "Item '" << nomeItem << "' removido com sucesso!" << endl;
 	}
-
-	if (!itemEncontrado) {
-		cout << "Item '" << nomeItem << "' n�o encontrado no invent�rio!" << endl;
+	else {
+		cout << "Item '" << nomeItem << "' não encontrado no inventário!" << endl;
 	}
 	atualizarItens(); //Funcao que atualiza os itens do inventario
 	return;
 }
 
-void TelaInventario::removerItemEquipado(Item item) {
-	bool itemEncontrado = false;
+void TelaInventario::removerItemEquipado(string nomeItem) {
+	// Usando algoritmo find para localizar o item
+	auto it = find(itensEquipados.begin(), itensEquipados.end(), nomeItem);
+	if (it != itensEquipados.end()) {
+		// Remove o item usando erase (mais eficiente que deslocamento manual)
+		itensEquipados.erase(it);
+		cntItensEquipados--; // Atualiza o contador
 
-	// Procura o item no vetor
-	for (int i = 0; i < cntItensEquipados; ++i) {
-		if (itensEquipados[i] == item.get_nome()) {
-			itemEncontrado = true;
-
-			// Desloca os itens posteriores para preencher o espa�o
-			for (int j = i; j < cntItensEquipados - 1; ++j) {
-				itensEquipados[j] = itensEquipados[j + 1];
-			}
-
-			// Limpa o �ltimo item e decrementa o contador
-			itensEquipados[cntItensEquipados - 1] = "";
-			cntItensEquipados--;
-
-			cout << "Item '" << item.get_nome() << "' removido com sucesso!" << endl;
-			break; // Sai do loop ap�s remover
-		}
+		cout << "Item '" << nomeItem << "' removido com sucesso!" << endl;
 	}
-
-	if (!itemEncontrado) {
-		cout << "Item '" << item.get_nome() << "' n�o encontrado no invent�rio!" << endl;
+	else {
+		cout << "Item '" << nomeItem << "' não encontrado no inventário!" << endl;
 	}
-
-	atualizarItens(); // Funcao que atualiza os itens do inventario
+	atualizarItens(); //Funcao que atualiza os itens do inventario
 	return;
+
 }
 
 void TelaInventario::atualizarItens() {
 	string itensStr = ""; //Variavel que armazena o itens como uma string
 
-	for (size_t i = 0; i < itens.size(); i++) { //Percorre o array de itens
+	for (string item : itens) { //Percorre o array de itens
 		if (!itensStr.empty()) { //Aplica a condicao somente se existir algum item no array
 			itensStr += ", "; // Adiciona v�rgula entre itens
 		}
-		itensStr += itens[i]; //Concatena o valor de itens[i] com o valor da variavel
+		itensStr += item; //Concatena o valor de itens[i] com o valor da variavel
 	}
-	linhasArquivo[8] = "Equipados: " + itensEquipados[0] + ", " + itensEquipados[1] + " (" + to_string(cntItensEquipados) + "/2)"; //Armazena a string dos itens equipados para adicionar no arquivo
-	linhasArquivo[9] = "[ " + itensStr + "] " + "(" + to_string(cntItensInventario) + "/18)"; //Armazena a string dos itens do inventario para adicionar no arquivo
+	linhasArquivo[10] = "Equipados: " + itensEquipados[0] + ", " + itensEquipados[1] + " (" + to_string(cntItensEquipados) + "/2)"; //Armazena a string dos itens equipados para adicionar no arquivo
+	linhasArquivo[11] = "[ " + itensStr + "] " + "(" + to_string(cntItensInventario) + "/18)"; //Armazena a string dos itens do inventario para adicionar no arquivo
+	bufferParaArquivo();
 }
 
 void TelaInventario::substituirItem(string i_equipado, string i_inventario) { //Substitui um item equipado por um item do inventario
@@ -192,9 +171,7 @@ void TelaInventario::substituirItem(string i_equipado, string i_inventario) { //
 	}
 
 	// troca os itens de posicao
-	string temp = itensEquipados[posEquipado];
-	itensEquipados[posEquipado] = itens[posInventario];
-	itens[posInventario] = temp;
+	swap(itensEquipados[posEquipado], itens[posInventario]);
 
 	atualizarItens(); // Funcao que atualiza os itens do inventario
 }
@@ -215,24 +192,66 @@ void TelaInventario::modificarInventario() { // Funcao caso o usuario chame o in
 
 	cout << "remover(1)" << endl;
 	cout << "substituir(2)" << endl;
+	cout << "usar provisao(3)" << endl;
 	cout << "Digite o codigo do que deseja realizar no seu inventario ou 0 para sair: ";
 	cin >> opcao; // Aguarda a resposta do usuario
 	switch (opcao) { // Verifica a acao escolhida
 	case 1:
 		cout << "Digite o nome do item que deseja remover: ";
-		cin >> itemRemovido;
+		cin.ignore();
+		getline(cin, itemRemovido); // Lê toda a linha incluindo espaços
+
 		removerItemInventario(itemRemovido);
 		break; // Adiciona o break para evitar que o usuario entre na proxima condicao sem querer
 	
 	case 2: // Substitui um item equipado por um item do inventario
 		cout << "Digite o nome do item equipado: ";
-		cin >> itemEquipado;
+		cin.ignore();
+		getline(cin, itemEquipado); // Lê toda a linha incluindo espaços
+
 		cout << "Digite o nome do item do inventario: ";
-		cin >> itemAdicionado;
+		getline(cin, itemAdicionado); // Lê toda a linha incluindo espaços
+
 		substituirItem(itemEquipado, itemAdicionado); // Substitui o item equipado pelo item do inventario
 		break; // Adiciona o break para evitar que o usuario entre na proxima condicao sem querer
+
+	case 3:
+		usarProvisao();
 	case 0:
 		break;
 	}
 	return;
+}
+
+void TelaInventario::adicionarProvisao() {
+	cntProvisoes++;
+	linhasArquivo[10] = "Provisoes: " + to_string(cntProvisoes);
+	bufferParaArquivo();
+}
+
+void TelaInventario::usarProvisao() {
+	if (cntProvisoes > 0) {
+		cntProvisoes--; // Consume a provisao
+		// Cada provisao restaura 4 de energia
+		if ((energia + 4) > energiaMax){ // Se passar da energia maxima do personagem
+			energia = energiaMax; // fixa na energia maxima
+			return;
+		}
+		energia = energia + 4; // soma 4 na energia atual
+		linhasArquivo[10] = "Provisoes: " + to_string(cntProvisoes);
+		bufferParaArquivo();
+		return;
+	}
+	return;
+}
+
+void TelaInventario::bufferParaArquivo() {
+	//Escreve os valores de linhasArquivo no arquivo
+	ofstream outfile(arquivo); //Considera a variavel arquivo
+	if (outfile.is_open()) {
+		for (string linha : linhasArquivo) { // para cada linha(item) do vector linhasArquivo
+			outfile << linha << endl;
+		}
+	}
+	outfile.close();
 }

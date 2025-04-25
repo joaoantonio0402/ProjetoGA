@@ -1,7 +1,7 @@
 #2
-Voc� empurra a pesada porta de madeira e entra em um sagu�o empoeirado. No ch�o, encontra uma chave brilhante parcialmente escondida sob uma pedra solta.
+Voce empurra a pesada porta de madeira e entra em um saguao empoeirado. No chao, encontra uma chave brilhante parcialmente escondida sob uma pedra solta.
 
 I:chave;c;0;0;0
 
-#4: Seguir pelo corredor escuro � frente
-#5: Voltar e tentar o al�ap�o
+#4: Seguir pelo corredor escuro a frente
+#5: Voltar e tentar o alcapao

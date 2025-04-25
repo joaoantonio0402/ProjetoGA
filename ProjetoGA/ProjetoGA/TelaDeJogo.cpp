@@ -27,15 +27,22 @@ void TelaDeJogo::coletarItem(string nomeArquivo){
 
     
     while (getline(arquivo, linha)) {
+        
         if (linha.find("I:") == 0) {
+            
             string nomeItem = "";
             int index = 2;
+            
              // Comeca do indice 2 para pular "I:"
             while (index < linha.size() && linha[index] != ';') {
             nomeItem += linha[index];
             index++;
             }
+            
             inventario->adicionarItemInventario(nomeItem);// colocar o item no inventario
+        }
+        else if (linha.find("P:") == 0) {
+            inventario->adicionarProvisao();
         }
     }
     arquivo.close();
