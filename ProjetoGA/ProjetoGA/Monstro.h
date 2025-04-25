@@ -16,9 +16,12 @@ public:
 	int get_energia();
 	int get_tesouro();
 	int get_provisao();
+	char get_cenaVencer();
+	string get_cenaPerder();
 private:
 	string nomeArquivo;
 	string nome;
+	char cenaVencer;
 	int habilidade;
 	int sorte;
 	int energia;

@@ -12,6 +12,7 @@ Monstro::Monstro() {
     this->energia = 0;
     this->tesouro = 0;
     this->provisao = 0;
+    this->cenaVencer = ' ';
 }
 
 void Monstro::set_nomeArquivo(string s_nomeArquivo) {
@@ -35,10 +36,7 @@ void Monstro::init() {
     ifstream arquivo(nomeArquivo);
     string linha;
     string ultimaLinha;
-    size_t pos;
-    string cenaVencer;
-    string cenaPerder;
-
+ 
     while (getline(arquivo, linha)) {
         ultimaLinha = linha;
         if (linha.find("H:") == 0) {
@@ -60,9 +58,8 @@ void Monstro::init() {
             nome = linha.substr(2);
         }
     }
-    pos = ultimaLinha.find(';');
-    cenaVencer = ultimaLinha.substr(0, pos);
-    cenaPerder = ultimaLinha.substr(pos + 1);
+    cenaVencer = ultimaLinha[0];
+    
 }
 
 string Monstro::get_nome() {
@@ -87,4 +84,14 @@ int Monstro::get_tesouro() {
 
 int Monstro::get_provisao() {
     return provisao;
+}
+
+char Monstro::get_cenaVencer() {
+    return cenaVencer;
+}
+
+string Monstro::get_cenaPerder() {
+    set_nomeArquivo("gameover.txt");
+    ler();
+    exit(0);
 }
