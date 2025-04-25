@@ -3,6 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\Downloads\\7.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaBatalha.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\TelaBatalha.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\Downloads\\8.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -19,18 +29,8 @@
       "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\4.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\Downloads\\8.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\Downloads\\7.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\Monstro.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\Monstro.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaBatalha.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|solutionrelative:ProjetoGA\\TelaBatalha.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{985D1724-88B2-45F2-B907-A7D018EDCC43}|ProjetoGA\\ProjetoGA.vcxproj|C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaDeJogo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -96,7 +96,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -116,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "8.txt",
               "DocumentMoniker": "C:\\Users\\Gabriel\\Downloads\\8.txt",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\8.txt",
@@ -129,13 +129,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "7.txt",
               "DocumentMoniker": "C:\\Users\\Gabriel\\Downloads\\7.txt",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\7.txt",
               "ToolTip": "C:\\Users\\Gabriel\\Downloads\\7.txt",
               "RelativeToolTip": "..\\..\\..\\..\\Downloads\\7.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-04-25T19:49:33.368Z",
               "EditorCaption": ""
@@ -155,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "TelaBatalha.cpp",
               "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\TelaBatalha.cpp",
               "RelativeDocumentMoniker": "ProjetoGA\\TelaBatalha.cpp",
@@ -168,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Monstro.cpp",
               "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\Monstro.cpp",
               "RelativeDocumentMoniker": "ProjetoGA\\Monstro.cpp",
@@ -181,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "4.txt",
               "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\4.txt",
               "RelativeDocumentMoniker": "ProjetoGA\\4.txt",
@@ -207,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "2.txt",
               "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\2.txt",
               "RelativeDocumentMoniker": "ProjetoGA\\2.txt",
@@ -220,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "3.txt",
               "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\3.txt",
               "RelativeDocumentMoniker": "ProjetoGA\\3.txt",
@@ -233,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "1.txt",
               "DocumentMoniker": "C:\\Users\\Gabriel\\source\\repos\\ProjetoGA_2\\ProjetoGA\\ProjetoGA\\1.txt",
               "RelativeDocumentMoniker": "ProjetoGA\\1.txt",

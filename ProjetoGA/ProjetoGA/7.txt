@@ -1,0 +1,6 @@
+#7
+Você encontra uma sala com uma estátua antiga. Ao tocá-la, um compartimento se abre com um item mágico.
+
+I:anel de protecao;r;1;-2;-1
+
+#8: Seguir pela passagem oculta atrás da estátua
